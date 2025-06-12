@@ -19,17 +19,6 @@ interface IOrder {
 	remove(id: string): void;
 };
 
-interface ICatalogItems<T> {
-	items: T[];
-	getProductById(id: string): IProduct | undefined;
-	addProduct(product: IProduct): void;
-	removeProduct(id: string): void;
-};
-
-interface IModalData {
-	content: HTMLElement;
-};
-
 interface IBasket {
 	items: IProduct[];
 	total: number;
